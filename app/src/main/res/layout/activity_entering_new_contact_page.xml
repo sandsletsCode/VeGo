@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/lightgreen"
+    android:padding="16dp"
+    tools:context=".EnterNewContact">
+
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="711dp">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="0dp"
+                    android:textSize="23dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="text"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:textSize="23dp"
+                    android:text="Phone Number" />
+
+                <EditText
+                    android:id="@+id/editTextPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:ems="10"
+                    android:hint="Number"
+                    android:inputType="number"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Nick Name"
+                    android:textSize="23dp" />
+
+                <EditText
+                    android:id="@+id/editTextNickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:ems="10"
+                    android:hint="Nick Name"
+                    android:inputType="text"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:textSize="23dp"
+                    android:text="Address" />
+
+                <EditText
+                    android:id="@+id/editTextAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:ems="10"
+                    android:hint="H No, Street, City"
+                    android:inputType="textPostalAddress"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:textSize="23dp"
+                    android:text="Notes" />
+
+                <EditText
+                    android:id="@+id/editTextMultiLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Notes"
+                    android:inputType="textImeMultiLine"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:onClick="addContact"
+                    android:text="Add Contact" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>
